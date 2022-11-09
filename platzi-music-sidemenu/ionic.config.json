@@ -1,0 +1,7 @@
+{
+  "name": "platzi-music-sidemenu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
