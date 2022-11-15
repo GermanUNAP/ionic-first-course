@@ -24,36 +24,3 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
-*{
-  background: white;
-}
-ion-slides{
-  color: black;
-  height: 100%;
-  max-width: 800px;
-
-}
-ion-slide{
-  margin-top: 15%;
-}
-p{
-  padding-left: 10%;
-  padding-right: 10%;
-}
-h1{
-  color: rgb(43, 26, 94);
-}
-h2{
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.close-icon{
-  padding-left: 80%;
-  font-size: 32px;
-  color: rgb(32, 20, 68);
-}
-.swiper-slide{
-  display: block;
-  margin-bottom: 64px;
-  background-color: white;
-}
