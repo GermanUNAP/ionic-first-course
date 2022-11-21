@@ -1,9 +1,38 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>intro</ion-title>
-  </ion-toolbar>
-</ion-header>
+<!DOCTYPE html>
+<html lang="en">
 
-<ion-content>
+<head>
+  <meta charset="utf-8" />
+  <title>Ionic App</title>
 
+  <base href="/" />
+
+  <meta name="color-scheme" content="light dark" />
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+</head>
+
+<ion-content padding>
+  <ion-slides>
+    <ion-slide *ngFor="let slide of slides">
+      <ion-icon name="close" class="close-icon" (click)="finish()"></ion-icon>
+      <h1>{{slide.title}}</h1>
+      <div>
+        <img src="assets/icon/keynote.jpg" alt="">
+      </div>
+      <h1>{{slide.subtitle}}</h1>
+      <p>{{slide.description}}</p>
+      <ion-icon name="{{slide.icon}}"></ion-icon>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
+
+</html>
+
